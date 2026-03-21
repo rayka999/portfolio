@@ -3,79 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biomaket | Introdução</title>
-  <link rel="icon" href="https://em-content.zobj.net/source/microsoft-teams/337/microbe_1f9a0.png" type="image/png">
-  <link rel="stylesheet" href="css/index.css">
+  <title>Alexandre Garcia Fotografias | Introdução</title>
+
+  <!-- Bootstrap primeiro -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Seu CSS depois -->
+  <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand fw-bold" href="#">citoScience</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+      <a class="navbar-brand fw-bold" href="">Alexandre Garcia Fotografias</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Introdução</a></li>
-          <li class="nav-item"><a class="nav-link" href="html/membrana-estrutura.html">Estrutura da Membrana</a></li>
-          <li class="nav-item"><a class="nav-link" href="html/membrana-funcoes.html">Funções da Membrana</a></li>
-          <li class="nav-item"><a class="nav-link" href="html/parede-estrutura.html">Estrutura da Parede</a></li>
-          <li class="nav-item"><a class="nav-link" href="html/parede-funcoes.html">Funções da Parede</a></li>
-          <li class="nav-item"><a class="nav-link" href="html/osmose.html">Osmose</a></li>
-          <li class="nav-item"><a class="nav-link" href="html/revisao.html">Revisão</a></li>
-          <li class="nav-item"><a class="nav-link" href="html/sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="/html/portfólio.html">PORTFÓLIO</a></li>
+          <li class="nav-item"><a class="nav-link" href="/html/quem_somos.html">QUEM SOMOS?</a></li>
+          <li class="nav-item"><a class="nav-link" href="/html/contato.html">CONTATO</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <header class="site-header text-center py-3">
-    <h1 class="display-4 fw-bold">Biomaket</h1><br>
-    <p class="lead">Membrana Plasmática e Parede Celular</p>
-  </header>
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <h1>Capturando Momentos Eternos</h1>
+      <p>Fotografia profissional com elegância e emoção</p>
+      <a href="/html/portfólio.html" class="btn btn-primary mt-3">Ver Portfólio</a>
+    </div>
+  </section>
 
+  <!-- CONTEÚDO -->
   <main class="container my-5">
-    <h2 class="text-success mb-4">Introdução ao Tema</h2>
 
-    <div class="card-section">
-      <h2 class="h5 text-success">Apresentação Geral do Conteúdo</h2>
-      <p>
-        Compreender as estruturas celulares, como a parede celular e a membrana plasmática, é essencial para o estudo da biologia. Este projeto busca aprofundar esses conceitos por meio da criação da Biomaket e de uma página web interativa, unindo teoria e prática no aprendizado.
-      </p>
-      <img src="imgs/animal_vs_vegetal.png" class="img-fluid rounded shadow-sm mx-auto d-block" alt="Célula animal vs vegetal">
-    </div>
+    <div class="row g-4">
 
-    <div class="card-section">
-      <h2 class="h5 text-success">Importância das Paredes Celulares e Membranas</h2>
-      <p>
-        A parede celular, presente em plantas, algas e fungos, garante suporte e forma à célula, protegendo-a contra rupturas causadas pela pressão osmótica e a ação de patógenos. Sua estrutura rígida é essencial para a sustentação dos organismos e impede que a célula inche ou se rompa ao absorver água em excesso.
-      </p>
-      <div class="d-flex flex-column align-items-center mt-4 video-box" id="videoBox">
-        <video class="rounded shadow-sm img-fluid" controls>
-          <source src="videos/membrana e parede.mp4" type="video/mp4">
-        </video>
-        <p class="text-center text-muted mt-2">
-          <em>Vídeo geral das maquetes sobre membrana plasmática e parede celular</em>
-        </p>
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h5 class="card-title">Ensaios</h5>
+          <p>Registre momentos únicos com sensibilidade.</p>
+        </div>
       </div>
-      <p>
-        A membrana plasmática delimita e protege a célula, controlando a entrada e saída de substâncias por sua permeabilidade seletiva. Assim, mantém a homeostase celular e possibilita a comunicação e interação com o meio externo e outras células.
-      </p>
-    </div>
-    
-    <div class="d-flex justify-content-center mt-4">
-      <input class="btn btn-success" id="btnTopo" type="button" onclick="topo()" value="↑ Voltar ao Topo">
+
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h5 class="card-title">Eventos</h5>
+          <p>Cobertura completa para ocasiões especiais.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h5 class="card-title">Retratos</h5>
+          <p>Fotografias que valorizam sua essência.</p>
+        </div>
+      </div>
+
     </div>
 
   </main>
 
-  <footer class="text-center py-3 mt-2">
-    <p class="mb-0">&copy; 2025 citoScience | Projeto Educacional</p>
+  <!-- FOOTER -->
+  <footer class="text-center py-3">
+    <p>© 2026 Alexandre Garcia Fotografias</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/topo.js"></script>
+
 </body>
 </html>

@@ -1,5 +1,5 @@
 body {
-  background-color: #F5F8F6 !important;
+  background-color: #000000 !important;
   color: #333333 !important;
   padding-bottom: 60px;
   padding-top: 70px;
@@ -48,48 +48,4 @@ footer {
   background-color:#198754;
   color: #fff;
   z-index: 4;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #121A12 !important;
-    color: #E0E0E0 !important;
-  }
-  .site-header {
-    background-color: #121A12;
-  }
-  .site-header .display-4,
-  .site-header .lead {
-    background: linear-gradient(90deg, #66BB6A 0%, #1B4D27 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent !important;
-  }
-  .card-section {
-    background-color: #1F2F1F;
-    color: #E0E0E0;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-  }
-  .btn-success {
-    background-color: #1B4D27;
-    border-color: #1B4D27;
-    color: #E0E0E0;
-  }
-  .btn-success:hover {
-    background-color: #66BB6A;
-    color: #121A12;
-  }
-  em{
-    color: rgb(191, 189, 189);
-  }
-  footer{
-    background-color:#198754;
-  }
-  h1.text-success,
-  h2.text-success,
-  h5.text-success,
-  .text-success {
-    color: #66BB6A !important;
-  }
 }
