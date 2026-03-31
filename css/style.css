@@ -153,7 +153,48 @@ footer {
   border-top: 1px solid #FFD700;
   color: #F5F5F5;
 }
+body {
+  margin: 0;
+}
 
+/* MASONRY */
+.galeria {
+  column-count: 3;
+  column-gap: 0;
+}
+
+/* ITENS */
+.item {
+  position: relative;
+  display: block;
+  break-inside: avoid;
+}
+
+.item img {
+  width: 100%;
+  display: block;
+}
+
+/* TEXTO */
+.item span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: white;
+  font-size: 28px; /* letras grandes */
+  font-weight: bold;
+  text-align: center;
+
+  opacity: 0;
+  transition: 0.3s;
+}
+
+/* HOVER */
+.item:hover span {
+  opacity: 1;
+}
 @media (max-width: 768px) {
   .hero {
     min-height: 80vh;
@@ -168,4 +209,25 @@ footer {
   .hero p {
     font-size: 1rem;
   }
+}
+
+@media (max-width: 900px) {
+  .galeria {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 500px) {
+  .galeria {
+    column-count: 1;
+  }
+}
+
+.item img {
+  transition: 0.3s;
+}
+
+.item:hover img {
+  transform: scale(1.05);
+  filter: brightness(70%);
 }
