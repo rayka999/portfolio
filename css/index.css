@@ -1,51 +1,256 @@
+/* =========================
+   SOBRESCREVENDO BOOTSTRAP
+========================= */
+:root {
+  --bs-body-bg: #000000;
+  --bs-body-color: #FFFFFF;
+
+  --bs-primary: #FFD700;     /* dourado */
+  --bs-secondary: #0D0D0D;   /* preto suave */
+  --bs-danger: #D62828;      /* vermelho */
+
+  --bs-light: #F5F5F5;
+  --bs-dark: #000000;
+}
+
+/* =========================
+   BODY
+========================= */
 body {
-  background-color: #000000 !important;
-  color: #333333 !important;
-  padding-bottom: 60px;
-  padding-top: 70px;
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  padding-top: 50px; /* altura da navbar */
+  display: flex;
+  flex-direction: column;
 }
-.site-header {
-  background-color: #F5F8F6;
+
+html, body {
+  height: 100%;
+}
+
+/* ÍCONES */
+.card i {
+  color: #FFD700; /* dourado */
+}
+
+/* HOVER */
+.card:hover i {
+  color: #D62828; /* vermelho */
+}
+
+/* TÍTULO */
+main h1 {
+  color: #FFD700;
+}
+
+main {
+  flex: 1; /* empurra o footer pra baixo */
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  background-color: #0D0D0D !important;
+  border-bottom: 2px solid #FFD700;
+}
+
+.navbar-brand {
+  color: #FFD700 !important;
+}
+
+.nav-link {
+  color: #FFFFFF !important;
+}
+
+.nav-link:hover {
+  color: #FFD700 !important;
+}
+
+.nav-link.active {
+  color: #FFD700 !important;
+}
+
+/* =========================
+   BOTÕES (BOOTSTRAP)
+========================= */
+.btn-primary {
+  background-color: #FFD700;
+  border: none;
+  color: #000;
+}
+
+.btn-primary:hover {
+  background-color: #D62828;
+  color: #FFF;
+}
+
+.btn-outline-primary {
+  border-color: #FFD700;
+  color: #FFD700;
+}
+
+.btn-outline-primary:hover {
+  background-color: #FFD700;
+  color: #000;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+  min-height: 100vh;
+  padding: 80px 20px; /* espaço para navbar */
+  
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)),
+    url('https://images.contentstack.io/v3/assets/blt0e5ec1de4817c440/blt708ad88fd066ec86/65b8221d279fbe194def730a/marketing-hero-D750.jpg');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+   background-attachment: fixed; /* efeito parallax leve */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  margin-top: 1rem;
 }
-.site-header .display-4,
-.site-header .lead {
-  background: linear-gradient(90deg, #2ba757 0%, #06c006 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent !important;
-  display: inline-block;
+
+.hero h1 {
+  color: #FFD700;
+  font-size: 3rem;
 }
-.site-header .lead {
-  font-weight: 500;
+
+.hero p {
+  color: #F5F5F5;
 }
-.card-section {
-  background-color: #E8F5E9;
-  color: #333333;
-  border-radius: 12px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+/* =========================
+   CARDS (BOOTSTRAP)
+========================= */
+.card {
+  background-color: #0D0D0D;
+  border: 1px solid #E6B800;
+  color: #FFFFFF;
+  transition: 0.3s;
 }
-.btn-success {
-  background-color: #2E7D32;
-  border-color: #2E7D32;
-  color: #fff;
+
+.card:hover {
+  transform: scale(1.05);
+  border-color: #FFD700;
 }
-.btn-success:hover {
-  background-color: #A5D6A7;
-  color: #121A12;
+
+.card-title {
+  color: #FFD700;
 }
+
+/* =========================
+   FOOTER
+========================= */
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  background-color: #0D0D0D;
+  border-top: 1px solid #FFD700;
+  color: #F5F5F5;
+}
+body {
+  margin: 0;
+}
+
+/* MASONRY */
+.galeria {
+  column-count: 3;
+  column-gap: 0;
+}
+
+/* ITENS */
+.item {
+  position: relative;
+  display: block;
+  break-inside: avoid;
+}
+
+.item img {
   width: 100%;
+  display: block;
+}
+
+/* TEXTO */
+.item span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: white;
+  font-size: 28px; /* letras grandes */
+  font-weight: bold;
   text-align: center;
-  padding: 15px 0;
-  background-color:#198754;
-  color: #fff;
-  z-index: 4;
+
+  opacity: 0;
+  transition: 0.3s;
+}
+
+/* HOVER */
+.item:hover span {
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  .hero {
+    min-height: 80vh;
+    padding: 100px 15px;
+    background-position: center top; /* melhora corte no celular */
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .galeria {
+    column-count: 2;
+  }
+  .item span {
+    opacity: 1; /* sempre visível */
+  }
+
+  .item img {
+    filter: brightness(70%);
+  }
+}
+
+@media (max-width: 500px) {
+  .galeria {
+    column-count: 1;
+  }
+  .item span {
+    opacity: 1; /* sempre visível */
+  }
+
+  .item img {
+    filter: brightness(70%);
+  }
+}
+
+.item img {
+  transition: 0.3s;
+}
+
+.item:hover img {
+  transform: scale(1.05);
+  filter: brightness(70%);
+}
+@media (max-width: 768px) {
+  .item span {
+    opacity: 1; /* sempre visível */
+  }
+
+  .item img {
+    filter: brightness(70%);
+  }
 }

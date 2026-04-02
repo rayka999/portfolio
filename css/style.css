@@ -215,26 +215,13 @@ body {
   .galeria {
     column-count: 2;
   }
-  .item span {
-    opacity: 1; /* sempre visível */
-  }
-
-  .item img {
-    filter: brightness(70%);
-  }
 }
 
 @media (max-width: 500px) {
   .galeria {
     column-count: 1;
   }
-  .item span {
-    opacity: 1; /* sempre visível */
-  }
 
-  .item img {
-    filter: brightness(70%);
-  }
 }
 
 .item img {
@@ -244,13 +231,4 @@ body {
 .item:hover img {
   transform: scale(1.05);
   filter: brightness(70%);
-}
-@media (max-width: 768px) {
-  .item span {
-    opacity: 1; /* sempre visível */
-  }
-
-  .item img {
-    filter: brightness(70%);
-  }
 }
