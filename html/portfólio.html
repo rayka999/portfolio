@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="../css/index.css">
   <link rel="icon" type="image/png" href="../site/logo1.png">
 </head>
-</head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
     <div class="container-fluid">
@@ -28,39 +27,71 @@
     </div>
   </nav>
 
-  <main>
-    <div class="galeria">
-      <a href="../html/aniversários.html" class="item">
-        <img src="../site/Aniversarios/Aniversaio Happy day/ALE_1122.JPG" alt="ANIVERSÁRIO" loading="lazy">
-        <span>ANIVERSÁRIOS</span>
-      </a>
+  <main class="container" style="margin-top: 40px;">
 
-      <a href="../html/batizados.html" class="item">
-        <img src="../site/Batizados/São Francisco de Assis/ALE_8064.JPG" alt="BATIZADO" loading="lazy">
-        <span>BATIZADOS</span>
-      </a>
+  <!-- Abas -->
+  <ul class="nav nav-tabs justify-content-center mb-4" id="portfolioTabs">
+    <li class="nav-item">
+      <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#eventos">Eventos</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#religioso">Religioso</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#academico">Acadêmico</button>
+    </li>
+  </ul>
 
-      <a href="../html/casamento.html" class="item">
-        <img src="../site/Casamento no civil/ALE_1732.JPG" alt="CASAMENTO" loading="lazy">
-        <span>CASAMENTO NO CIVIL</span>
-      </a>
+  <!-- Conteúdo das abas -->
+  <div class="tab-content">
 
-      <a href="../html/crisma.html" class="item">
-        <img src="../site/Crisma/DSC08698.JPG" alt="CRISMA" loading="lazy">
-        <span>CRISMA</span>
-      </a>
+    <!-- EVENTOS -->
+    <div class="tab-pane fade show active" id="eventos">
+      <div class="galeria">
+        <a href="../html/aniversários.html" class="item">
+          <img src="../site/Aniversarios/Aniversaio Happy day/ALE_1122.JPG" loading="lazy">
+          <span>ANIVERSÁRIOS</span>
+        </a>
 
-      <a href="../html/eucaristia.html" class="item">
-        <img src="../site/Eucaristia/São jose de anchieta/DSC00369.JPG" alt="CRISMA" loading="lazy">
-        <span>EUCARISTIA</span>
-      </a>
-
-      <a href="../html/formatura.html" class="item">
-        <img src="../site/formatura EM/DSC01092.JPG" alt="CRISMA" loading="lazy">
-        <span>FORMATURAS</span>
-      </a>
+        <a href="../html/casamento.html" class="item">
+          <img src="../site/Casamento no civil/ALE_1732.JPG" loading="lazy">
+          <span>CASAMENTO CIVIL</span>
+        </a>
+      </div>
     </div>
-  </main>
+
+    <!-- RELIGIOSO -->
+    <div class="tab-pane fade" id="religioso">
+      <div class="galeria">
+        <a href="../html/batizados.html" class="item">
+          <img src="../site/Batizados/São Francisco de Assis/ALE_8064.JPG" loading="lazy">
+          <span>BATIZADOS</span>
+        </a>
+
+        <a href="../html/crisma.html" class="item">
+          <img src="../site/Crisma/DSC08698.JPG" loading="lazy">
+          <span>CRISMA</span>
+        </a>
+
+        <a href="../html/eucaristia.html" class="item">
+          <img src="../site/Eucaristia/São jose de anchieta/DSC00369.JPG" loading="lazy">
+          <span>EUCARISTIA</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- ACADÊMICO -->
+    <div class="tab-pane fade" id="academico">
+      <div class="galeria">
+        <a href="../html/formatura.html" class="item">
+          <img src="../site/formatura EM/DSC01092.JPG" loading="lazy">
+          <span>FORMATURA</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</main>
 
   <footer class="text-center py-3">
     <p>© 2026 Alexandre Garcia Fotografias</p>
